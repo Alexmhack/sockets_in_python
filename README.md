@@ -17,3 +17,12 @@ messages in the network.
 
 bind() is used to associate a socket interface with port number, we have HOST set to standard 
 IPV4 address, if it is a empty string then it will listen to all IPV4 interfaces.
+
+# Logic for echo_server and echo_client
+Our server creates a server at localhost:65000 and waits infinitely for a connection at that host 
+and port and if connection recieved then it recieves data from the client and then stores that 
+data and echo it back or we can say send that again to the client hence echoes the data.
+
+Our client connects at the same port at which our server has established the connection and then
+send some bytes object to the server and then recieves data from server and prints it, the client 
+get what it has sent.
